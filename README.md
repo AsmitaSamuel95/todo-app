@@ -4,7 +4,11 @@ A simple full-stack Todo application built with Flask (backend), React (frontend
 
 ## Project Structure
 
-<pre> ```text todo-app/ ├── backend/ ├── frontend/ ``` </pre>
+```text
+todo-app/
+├── backend/
+├── frontend/
+```
 
 ## Backend Setup
 
