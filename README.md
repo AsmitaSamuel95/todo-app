@@ -10,27 +10,50 @@ todo-app/
 ├── frontend/
 ```
 
-## Backend Setup
+## Backend Setup (One-Time)
 
-1. Navigate to backend folder:
-   cd backend
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate   # Windows
+pip install flask flask-sqlalchemy flask-cors
+```
 
-2. Create virtual environment:
-   python -m venv venv
+## Frontend Setup (One-Time)
 
-3. Activate virtual environment:
-   Windows:
-   venv\Scripts\activate
+```bash
+cd frontend
+npm install
+```
 
-4. Install dependencies:
-   pip install flask flask-sqlalchemy flask-cors
+## Run the App (After Initial Setup)
 
-    What each does :
-    flask → backend framework
-    flask-sqlalchemy → lets Flask talk to SQLite easily
-    flask-cors → allows React (frontend) to call your backend
+### Start Backend
 
-5. Create app.py in backend
+```bash
+cd backend
+venv\Scripts\activate   # Windows
+python app.py
+```
+
+### Start Frontend
+
+```bash
+cd frontend
+npm start
+```
+
+### Access the App
+
+- Frontend: http://localhost:3000  
+- Backend API: http://127.0.0.1:5000  
+
+## API Endpoints
+
+- `GET /tasks` → Fetch all tasks  
+- `POST /tasks` → Create a new task  
+- `PUT /tasks/<id>` → Update task status  
+- `DELETE /tasks/<id>` → Delete a task 
 
 ## Tech Stack
 
